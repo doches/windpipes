@@ -1,0 +1,65 @@
+[
+    {
+        "difficulty": 1,
+        "part": [
+            {
+                "duration": 1
+            },
+            {
+                "duration": 1,
+                "note": "E"
+            },
+            {
+                "duration": 1,
+                "note": "D"
+            },
+            {
+                "duration": 1,
+                "note": "F#"
+            },
+            {
+                "duration": 1,
+                "note": "D"
+            },
+            {
+                "duration": 1,
+                "note": "D"
+            },
+            {
+                "duration": 1,
+                "note": "C#"
+            },
+            {
+                "duration": 1
+            },
+            {
+                "duration": 1,
+                "note": "E"
+            },
+            {
+                "duration": 1,
+                "note": "D"
+            },
+            {
+                "duration": 1,
+                "note": "F#"
+            },
+            {
+                "duration": 1,
+                "note": "D"
+            },
+            {
+                "duration": 1,
+                "note": "D"
+            },
+            {
+                "duration": 1,
+                "note": "C#"
+            },
+            {
+                "duration": 1,
+                "finish": true
+            }
+        ]
+    }
+]
