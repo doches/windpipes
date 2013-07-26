@@ -108,12 +108,11 @@ function makeNoteEvent(note, nextNote) {
     if (nextNote != null && nextNote.note != null) {
       $("#next-note").css("display", "block");
       $("#next-note").css("background-color", "rgb("+rgbForNote(nextNote.note)+")");
-      $("#next-note").html(nextNote.note);
+      //$("#next-note").html(nextNote.note);
     } else {
       $("#next-note").css("display", "none");
     }
     $("#note-box").css("background-color", "rgb("+color+")");
-    $("#next-note").css("display", "none");
     
     console.log(color);
   }

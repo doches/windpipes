@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script type="text/javascript" src="js/notecolors.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function() {
+        for(var note in notes) {
+          console.log(note);
+          key = note;
+          if (note[1] == "#") {
+            key = note[0] + "_";
+          }
+          $("#" + key).css("background-color", "rgb(" + rgbForNote(note) + ")");
+        }
+      });
+    </script>
+    <style>
+      div {
+        width: 8.333%;
+        height: 100%;
+        display: inline-block;
+        float: left;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="G"></div>
+    <div id="G_"></div>
+    <div id="A"></div>
+    <div id="A_"></div>
+    <div id="B"></div>
+    <div id="C"></div>
+    <div id="C_"></div>
+    <div id="D"></div>
+    <div id="D_"></div>
+    <div id="E"></div>
+    <div id="F"></div>
+    <div id="F_"></div>
+  </body>
+</html>

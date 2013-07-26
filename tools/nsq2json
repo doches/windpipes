@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+# Script to convert a note sequence file ('nsq') into wind-pipes JSON
+# 
+# Usage: ruby #{$0} < file.nsq > file.json
+
+require 'json'
+
+part_seqs = []
+STDIN.each_line do |line|
+    part_seqs.push(line)
+end
+
+parts = []
+part_seqs.each do |seq|
+    part = {}
+    part["difficulty"] = 1
+    notes = []
+    part["part"] = notes
+    (0..seq.length-1).each do |i|
+        notes[i] = {"duration" => 1}
+        if seq[i].chr != "_"
+            notes[i]["note"] = seq[i].chr
+        end
+    end
+    part["part"].push({"duration" => 1, "finish" => true})
+
+    parts.push(part)
+end
+
+puts parts.to_json

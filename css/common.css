@@ -38,6 +38,7 @@ body {
   border-radius: 2px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
   display: none;
+  font-size: 24px;
 }
 
 #countdown {
@@ -46,7 +47,6 @@ body {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
-  display: none;
 }
 
 .pip {
@@ -78,5 +78,4 @@ body {
 }
 
 #note-box {
-  display: none;
 }
